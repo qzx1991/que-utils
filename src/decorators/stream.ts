@@ -1,4 +1,5 @@
-import { Debounce, Throttle } from "..";
+import { Debounce } from "../Debounce";
+import { Throttle } from "../Throttle";
 
 // 网络防抖 300ms内有新的请求都会重置，直到300毫秒内没有输入
 export function DeocratorOfDebounceTime(timeout = 300) {

@@ -25,7 +25,7 @@ export class Throttle {
 export class Debounce {
   timeSchedule: NodeJS.Timeout | number | null = null;
 
-  constructor(private timeout = 50) {}
+  constructor(private timeout = 300) {}
 
   async execute(func: () => any = () => {}) {
     return new Promise((resolve, reject) => {
